@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tas Kagit Makas
+    </string>
+    <string name="activitySecond_name">Second Activity</string>
+    <string name="tas">Taş</string>
+    <string name="Kagit">Kağıt</string>
+    <string name="Makas">Makas</string>
+</resources>

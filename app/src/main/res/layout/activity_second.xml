@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView_kullanici1skor"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="87dp"
+        android:text="1.Kullanıcı:0"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_kullanici2skor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="2.Kullanıcı:0"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_kullanici1skor"
+        app:layout_constraintTop_toBottomOf="@+id/textView_kullanici1skor" />
+
+    <Button
+        android:id="@+id/buton_tas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:text="@string/tas"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buton_kagit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buton_kagit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/Kagit"
+        app:layout_constraintStart_toEndOf="@+id/buton_tas"
+        app:layout_constraintTop_toBottomOf="@+id/textView_kullanici2skor" />
+
+    <Button
+        android:id="@+id/buton_makas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/Makas"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buton_kagit"
+        app:layout_constraintStart_toEndOf="@+id/buton_kagit" />
+
+    <TextView
+        android:id="@+id/textView_sonKazanan"
+        android:layout_width="188dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginBottom="95dp"
+        android:text="Son kazanan:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_sira"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="28dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_kullanici1skor"
+        android:layout_width="0dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginBottom="88dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buton_makas"
+        app:layout_constraintEnd_toEndOf="@+id/tv_kullanici2skor"
+        app:layout_constraintStart_toStartOf="@+id/tv_kullanici2skor"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_kullanici2skor"
+        android:layout_width="72dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:layout_marginBottom="44dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buton_makas"
+        app:layout_constraintEnd_toEndOf="@+id/buton_makas"
+        app:layout_constraintStart_toStartOf="@+id/buton_kagit"
+        app:layout_constraintTop_toTopOf="@+id/tv_kullanici1skor" />
+
+    <TextView
+        android:id="@+id/textView_bilgi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_sonKazanan"
+        app:layout_constraintStart_toStartOf="@+id/textView_sonKazanan" />
+
+</android.support.constraint.ConstraintLayout>
